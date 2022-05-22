@@ -3,21 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
-    background-image: url('./img.jpg');
+   background-image: url('./img1.jpg');
+   background-size: contain;
+   height: 700px;
 }
 
 #container{
     /* border: 2px solid black; */
     border-radius: 8px;
-    box-shadow: 8px 8px 3px rgb(99, 98, 98);
-   
+    /* box-shadow: 4px 4px 2px rgb(32, 31, 31); */
+    box-shadow: -3px -3px 1px rgb(35, 103, 205);
+    padding: 1rem;
     margin-left: 4px;
     margin-right: 4px;
     position: relative;
-    
-    background-image: linear-gradient(to right, rgb(171, 167, 167),black);
+    background-image: linear-gradient(to right, rgb(0, 109, 234),black);
     display: grid;
     grid-template-columns: repeat(4,18%);
     grid-template-rows: repeat(6,12%);
@@ -34,21 +35,21 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to bottom, rgb(218, 78, 181),rgb(235, 191, 98));
-    box-shadow: 4px 4px 1px rgb(157, 155, 95);
+    background-image: linear-gradient(to bottom, rgb(78, 218, 211),rgb(14, 228, 243));
+    box-shadow: 2px 2px 1px rgb(34, 173, 211);
 }
 
 
 #item1{
-   font-weight: lighter;
-   font-size: 1.7rem;
+   font-weight: 600;
+   font-size: 1.8rem;
    border-radius: 15px;
    grid-column: 1/5;
    padding-right: 1.2rem;
    text-align:end;
    overflow: hidden;
-   background-image: linear-gradient(to bottom, rgb(177, 131, 131)
-   , rgb(230, 216, 224));
+   background-image: linear-gradient(to bottom, rgb(233, 240, 240)
+   , rgb(230, 220, 216));
    box-shadow: 4px 4px 1px rgb(174, 170, 170);
    color: rgb(0, 0, 0);
 }
@@ -57,7 +58,8 @@ body{
     background-image: none;
     background-color: rgb(221, 6, 42);
     color: rgb(254, 246, 246);
-    box-shadow: 4px 4px 1px red;
+    box-shadow: 2px 2px 1px red;
+   
 }
 
 
@@ -65,7 +67,7 @@ body{
     background-image: none;
     background-color: rgb(25, 155, 225);
     color: white;
-    box-shadow: 4px 4px 1px rgb(36, 131, 239);
+    box-shadow: 2px 2px 1px rgb(36, 131, 239);
 }
 
 input{
@@ -75,10 +77,10 @@ input{
 @media only screen and (max-width: 510px){
 #container{
     top: 60px;
-    left: 10%;
-    right: 10%;
+    left: 5%;
+    right: 5%;
     height: 500px;
-    width: 80%;
+    width: 90%;
 }
 }
 
